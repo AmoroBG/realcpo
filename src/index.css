@@ -182,6 +182,9 @@ form button {
   display: flex;
   flex-direction: column;
 }
+.pricing p{
+  text-align: center;
+}
 
 .pricing-cards {
   display: flex;
@@ -219,6 +222,9 @@ form button {
   flex-direction: column;
   gap: 1rem;
   background-color: #87cfeb5e;
+}
+.contact p{
+  text-align: center;
 }
 
 .contact-info {
@@ -375,10 +381,7 @@ body {
   }
 
   /* Pricing */
-  .pricing p{
-    text-align: center;
-  }
-  .pricing-cards {
+   .pricing-cards {
    flex-direction: column; 
     margin: 1rem 0;
     padding: 2.5rem;
