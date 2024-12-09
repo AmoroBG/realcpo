@@ -24,6 +24,7 @@ const Header = () => {
         </div>
 
         <button>Get started</button>
+        <div className="humburger">X</div>
       </nav>
     </header>
   );
