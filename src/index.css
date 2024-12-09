@@ -10,6 +10,8 @@ body {
   font-size: 1.25rem;
   overflow-x: hidden;
 }
+
+/* Utility Classes */
 a {
   cursor: pointer;
   text-decoration: none;
@@ -47,6 +49,7 @@ h4 {
   color: coral;
 }
 
+/* Header and Footer */
 header,
 footer {
   width: 100%;
@@ -58,6 +61,8 @@ footer {
 header {
   border-bottom: 2px solid #eee;
 }
+
+/* Navigation */
 
 nav {
   display: flex;
@@ -86,6 +91,7 @@ nav a {
   color: #262626;
 }
 
+/* Main */
 main {
   display: flex;
   flex-direction: column;
@@ -97,6 +103,8 @@ section {
   align-items: center;
   padding: 1rem 5rem;
 }
+
+/* Hero */
 
 .hero,
 .services {
@@ -117,6 +125,7 @@ section {
   width: 100%;
 }
 
+/* About */
 .about {
   min-height: 75vh;
   display: flex;
@@ -132,6 +141,7 @@ section {
   font-size: 1.5rem;
 }
 
+/* Services */
 .services {
   background: linear-gradient(45deg, coral, white 75%, royalblue);
 }
@@ -161,6 +171,8 @@ form button {
   border-bottom-left-radius: 0;
 }
 
+/* Pricing */
+
 .pricing {
   background-color: #4169e1a1;
   display: flex;
@@ -183,8 +195,6 @@ form button {
   text-align: center;
   width: 25vw;
   min-height: 50vh;
-  /* width: 20vw; */
-  /* gap: 0.5rem; */
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
@@ -199,6 +209,7 @@ form button {
   width: 100%;
 }
 
+/* Contact */
 .contact {
   display: flex;
   flex-direction: column;
@@ -223,7 +234,6 @@ form button {
 }
 
 .contact-form {
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -236,6 +246,7 @@ textarea {
   border: 1px solid gray;
 }
 
+/* Footer */
 footer {
   font-size: 0.9rem;
   width: 100%;
@@ -246,4 +257,139 @@ footer {
   text-align: center;
   color: #2626268c;
 }
+
+/* Media Queries */
+
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body{
+    background-color: red;
+    font-size: 1rem;
+  }
+
+   /* Navigation */
+  img.logo {
+    height: 40px;
+  }
+  nav a {
+    padding: 0.8rem;
+  }
+ section {
+    padding: 1rem 2.5rem;
+  }
+
+  /* Services */
+   .cta-form input {
+       padding: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: purple;
+    font-size: 1rem;
+  }
+
+  /* Utility Classes */
+  button {
+    padding: 0.55rem 0.75rem;
+  }
+
+  /* Header and Footer */
+  header,
+  footer {
+    min-height: 65px;
+    padding: 1rem 2.5rem;
+  }
+
+  /* Navigation */
+  img.logo {
+    height: 32px;
+  }
+
+  nav a {
+    padding: 0.5rem;
+    color: #262626;
+  }
+
+  /* Main */
+  section {
+    padding: 1rem 2.5rem;
+  }
+
+  /* Hero */
+  .hero,
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+
+  /* About */
+  .about {
+    min-height: 25vh;
+  }
+
+  .about p {
+    font-family: inter;
+    font-size: 1rem;
+  }
+
+  /* Services */
+  .services img {
+    width: 100%;
+  }
+
+  .cta-form input {
+    padding: 0.75rem;
+  }
+
+  /* Pricing */
+  .pricing-cards {
+    flex-direction: column;
+    /* gap: 2rem;
+      margin: 2rem 0;
+      padding: 5rem 2.5rem;
+      background-color: #8080803d;
+      border-radius: 8px; */
+  }
+
+  .card {
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+  }
+
+  .card button {
+    width: 100%;
+  }
+
+  /* Contact */
+  .contact-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+
+
+
+
 

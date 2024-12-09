@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>
-          Build your dream product with
+          Build your dream product with a
           <span className="text-highligh-color-primary"> Reliable </span>and
           <span className="text-highligh-color-secondary"> Resilient </span>
           Chief Product Officer (CPO)
@@ -17,7 +17,9 @@ const Hero = () => {
           with you and will slow down your progress or even quit at the time you
           need them most, leaving your business into extinction
         </p>
-        <button>Get started now</button>
+        <div className="button">
+          <button>Get started now</button>
+        </div>
       </div>
       <div className="hero-image">
         <img src={heroImage} alt="Hero Image" />

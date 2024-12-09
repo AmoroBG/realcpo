@@ -13,9 +13,9 @@ const About = () => {
       <div>
         <p>
           Share responsibilities like a co-founder and still retain 100%
-          ownership of your business.
+          ownership of your business. Engage anytime, Cancel anytime with no
+          hidden charges
         </p>
-        <p>Engage anytime, Cancel anytime with no hidden charges</p>
       </div>
     </section>
   );
